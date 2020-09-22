@@ -1,0 +1,34 @@
+.img1{
+    float: left;
+    width: 50%;
+    height: 550px;
+    background-color: rgb(241, 238, 234);
+}
+.form1{
+    float: right;
+    width: 50%;
+    height: 550px;
+    background-color: rgb(241, 238, 234);
+}
+.span1{
+    text-align: center;
+    position: relative;
+   top: 50px;
+}
+h1{
+    position: relative;
+    left: 90px;
+}
+.formtf1{
+   height: 30px;
+   border-radius: 5px;
+   position: relative;
+   left: 90px;
+}
+.formtf2{
+    height: 30px;
+    width: 352px;
+    border-radius: 5px;
+    position: relative;
+    left: 90px;
+ }

@@ -1,0 +1,57 @@
+<div class="wrapper">
+  <div id="leftsidebar">
+          <div class="container">
+                  <div class="row">
+                          <div class="column" *ngFor='let y of years'>
+                                  <button (click)='fun_year(y)' class="btn">{{y}}</button>
+                          </div>
+                  </div>
+                  <div class="container">
+                          <span style="text-decoration: underline;">Sucessfull Launch</span> 
+                          <div class="row">
+                                  <div class="column" *ngFor='let l of launch' >
+                                          <button (click)='fun_launch(l)' class="btn">{{l}}</button>
+                                  </div>
+                          </div>                                
+                  </div>
+                  <div class="container">
+                        <span style="text-decoration: underline;">  SucessFull Land</span> 
+                          <div class="row">
+                                  <div class="column" *ngFor='let l of land' >
+                                          <button (click)='fun_land(l)' class="btn">{{l}}</button>
+                                  </div>
+                          </div>                                
+                  </div>
+                  
+          </div>
+          
+  </div>   
+
+
+  <div id="main">
+          <div class="container">
+                  <div class="row">
+                          <div class="column1" *ngFor='let r of result'>
+                                  <div style="background-color: white;">
+                                          <div style="background-color: grey;">
+                                                  <img src="{{r.links.mission_patch_small}}" alt="" srcset="">
+                                                  
+                                          </div>
+                                          <span style="color: navy;font-weight: bold;">{{r.mission_name}} #{{r.flight_number}}</span>
+                                          <div style="font-weight: bold;"><span>Mission Ids  :</span>
+                                                  <ul>
+                                                          <li>{{r.mission_id}}</li>
+                                                  </ul>
+                                          </div>
+                                          <span style="font-weight: bold;"> Launch Year : </span><span style="color: rgb(58, 58, 223);">{{r.launch_year}}</span><br>
+                                          <span style="font-weight: bold;"> Sucessfull Launch : </span><span style="color: rgb(58, 58, 223);">{{r.launch_success}}</span><br>
+                                          <span style="font-weight: bold;"> Sucessfull Landing : </span><span style="color: rgb(58, 58, 223);">{{r.launch_landing}}</span>
+
+
+
+                                  </div>
+                          </div>
+                  </div>
+           </div>
+  </div>
+</div>
